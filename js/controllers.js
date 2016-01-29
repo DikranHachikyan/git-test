@@ -1,15 +1,15 @@
 app.controller('MainController', 
-    ['$scope','DataStorage',
-             function($scope, DataStorage){
-              DataStorage.readTitle();
+    ['$scope','DataService',
+             function($scope, DataService){
+              DataService.readTitle();
              //Get the collection
-              DataStorage.readCategories();    
+              DataService.readCategories();    
              //console.log(arrayRef);     
 }]);// Main Controller
 
 app.controller('ListItems', 
-               ['$scope','$routeParams','DataStorage',
-                    function($scope,$routeParams, DataStorage){
+               ['$scope','$routeParams','DataService',
+                    function($scope,$routeParams, DataService){
                       //console.log($routeParams);
-                      DataStorage.readItems($routeParams.itemId);                   
+                      DataService.readItems($routeParams.itemId);                   
 }]);

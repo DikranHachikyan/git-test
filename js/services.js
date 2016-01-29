@@ -1,4 +1,4 @@
-app.factory('DataStorage',['$rootScope','$firebaseObject','$firebaseArray', 'FB_URL',
+app.factory('DataService',['$rootScope','$firebaseObject','$firebaseArray', 'FB_URL',
             function($rootScope,$firebaseObject,$firebaseArray, FB_URL){
                  var ref = new Firebase(FB_URL); 
                  var ds = {
