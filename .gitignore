@@ -1,2 +1,6 @@
 docs/*
 *.md
+*.zip
+*.gz
+*.bz2
+logs/*
