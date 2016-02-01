@@ -4,7 +4,7 @@ var app = angular.module('CdCatalog', ['ngRoute','firebase']).
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider.
         when('/',{
-            templateUrl: 'views/main.html',
+            templateUrl: 'views/categories.html',
             controller:  'MainController'
         }).
         when('/items/:itemId',{
