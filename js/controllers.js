@@ -13,3 +13,10 @@ app.controller('ListItems',
                       //console.log($routeParams);
                       DataService.readItems($routeParams.itemId);                   
 }]);
+
+app.controller('LoginController', 
+               ['$scope','$routeParams',
+                    function($scope,$routeParams){
+                      //console.log($routeParams);
+                      
+}]);

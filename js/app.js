@@ -11,6 +11,10 @@ app.config(['$routeProvider', function($routeProvider){
             templateUrl: 'views/list-items.html',
             controller: 'ListItems'
         }).
+        when('/login', {
+            templateUrl: 'views/login.html',
+            controller: 'LoginController'
+        }).
         otherwise({
             redirectTo: '/'
         });
