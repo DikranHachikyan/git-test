@@ -1,8 +1,15 @@
-<form  novalidate ng-submit="">
-    User:<input type="email" name="email" placeholder="Enter email..."
+
+  <form name="lgform" novalidate ng-submit="">
+   <label>
+        User:<input type="email" name="email" placeholder="Enter email..."
     ng-required="true">
+    </label>
+    <p ng-show="lgform.email.$invalid && lgform.email.$touched">E-mail is required</p>
     <br>
-    Password:<input type="password" name="passwd" ng-required="true">
+    <label>
+        Password:<input type="password" name="passwd" ng-required="true">
+    </label>
+    <p ng-show="lgform.passwsd.$invalid && lgform.passwd.$touched">Password is required</p>    
     <br>
     <input type="submit" value="Login">
 </form>
