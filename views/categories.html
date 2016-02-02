@@ -1,8 +1,8 @@
-<h1>{{message}}</h1>
+<h1 class="heading">{{message}}</h1>
 
 
-<ul>
+<ul class="list">
     <li ng-repeat="(key,c) in collection">
-        <h2><a ng-href="#/items/{{key}}">{{c.genre}}</a></h2>
+        <h3><a ng-href="#/items/{{key}}" title="{{c.genre}}">{{c.genre}}</a></h3>
     </li>
 </ul>
