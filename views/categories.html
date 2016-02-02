@@ -1,8 +1,8 @@
 <h2 class="heading light"><em>{{message}}</em></h2>
 
 
-<ul style="list-style:none;">
+<ul class="list">
     <li ng-repeat="(key,c) in collection">
-        <h5><a ng-href="#/items/{{key}}" class="genge-link">{{c.genre}}</a></h5>
+        <h5><a ng-href="#/items/{{key}}" title="{{c.genre}}" class="genge-link">{{c.genre}}</a></h5>
     </li>
 </ul>
