@@ -3,6 +3,10 @@
 
 <ul class="list">
     <li ng-repeat="(key,c) in collection">
-        <h5><a ng-href="#/items/{{key}}" title="{{c.genre}}" class="genge-link">{{c.genre}}</a></h5>
+       <a ng-href="#/items/{{key}}" title="{{c.genre}}" class="genge-link">
+        <img ng-src="{{c.thumbnail}}" alt="c.genre">
+        <h5>{{c.genre}}</h5>
+        <p>{{c.description}}</p>
+       </a>    
     </li>
 </ul>
