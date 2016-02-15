@@ -15,6 +15,14 @@ app.config(['$routeProvider', function($routeProvider){
             templateUrl: 'views/login.html',
             controller: 'LoginController'
         }).
+        when('/facebook', {
+            templateUrl: 'views/login.html',
+            controller: 'LoginController'
+        }).
+        when('/twitter', {
+            templateUrl: 'views/login.html',
+            controller: 'LoginController'
+        }).
         otherwise({
             redirectTo: '/'
         });
